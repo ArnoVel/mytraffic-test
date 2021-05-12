@@ -11,7 +11,7 @@ if __name__ == '__main__':
     # load into pandas dataframe
     df = pd.read_csv(data_path)
 
-    # compute avg distance
+    # compute count per weekday
     count_per_weekday = psq.compute_count_per_weekday(df)
 
     print(count_per_weekday)
