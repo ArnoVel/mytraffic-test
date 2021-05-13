@@ -26,5 +26,5 @@ Pour obtenir un aperçu de la réponse, il suffit de lancer le script correspond
 depuis la racine du projet: par exemple pour la question 1 cela donne:
 
 ```
-$ python3 tst/spark/spark_fourth_question_answer.py
+$ python3 tst/spark/spark_first_question_answer.py
 ```
