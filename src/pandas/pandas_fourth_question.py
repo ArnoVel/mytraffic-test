@@ -1,8 +1,8 @@
 import os
 import pandas as pd
 
-from src.pandas_first_question import compute_distance
-from src.pandas_second_question import compute_weekday
+from src.pandas.pandas_first_question import compute_distance
+from src.pandas.pandas_second_question import compute_weekday
 
 def compute_distance_per_weekday(df):
     """
