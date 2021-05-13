@@ -1,8 +1,6 @@
 import pandas as pd
 from datetime import datetime
 from pyspark.ml.feature import Bucketizer
-from pyspark.sql.functions import udf
-from pyspark.sql.types import StringType
 
 def compute_hour_of_day(df):
     """
