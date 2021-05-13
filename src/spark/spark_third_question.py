@@ -40,7 +40,7 @@ def compute_count_per_timeslot(df):
 
     trsf = {0.0:"(0h - 4h]", 1.0:"(4h - 8h]",
             2.0:"(8h - 12h]",3.0:"(12h - 16h]",
-            4.0:"(16h - 20h]",5.0:"(0h - 4h]"
+            4.0:"(16h - 20h]",5.0:"(20h - 24h]"
             }
     timeslots = timeslots.rdd.map(lambda row: (trsf[row[1]], )).toDF(["hour bucket"])
 

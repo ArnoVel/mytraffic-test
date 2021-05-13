@@ -9,6 +9,12 @@ J'ai commençé par coder en python une solution avec une librairie familière: 
 Dans un premier temps je réponds aux 4 questions avec pandas, puis dans un second temps je reproduis
 le même résultat avec PySpark.
 
+Pour installer les dépendences si nécessaire, faire
+
+```
+$ pip install -r requirements.txt
+```
+
 # Solution Pandas
 
 Les réponses aux questions 1,2,3 et 4 sont disponibles.
