@@ -1,6 +1,7 @@
 import os
 from pyspark.sql import SparkSession
 from src.spark import spark_first_question as sfq
+
 # get correct data path
 dir_path = os.path.dirname(os.path.realpath(__file__))
 data_path = os.path.join(dir_path, '../../data/data.csv')

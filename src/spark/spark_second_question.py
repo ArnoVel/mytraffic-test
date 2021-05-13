@@ -14,7 +14,7 @@ def compute_weekday(df):
         lambda row: (datetime.strptime(row[3],'%Y-%m-%d %H:%M:%S').weekday(), )
         )
 
-    return days
+    return days.toDF(["day"])
 
 def compute_count_per_weekday(df):
     """
@@ -28,7 +28,7 @@ def compute_count_per_weekday(df):
     # find weekday for each row
     days = compute_weekday(df)
     # use groupby statement to get counts
-    days = compute_weekday(df).toDF(["day"])
+    days = compute_weekday(df)
     count_per_weekday = days.groupBy("day").count().sort(asc("day"))
 
     return count_per_weekday

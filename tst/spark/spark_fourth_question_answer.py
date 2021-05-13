@@ -1,6 +1,6 @@
 import os
 from pyspark.sql import SparkSession
-from src.spark import spark_third_question as stq
+from src.spark import spark_fourth_question as sfq
 
 # get correct data path
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -16,6 +16,6 @@ if __name__ == '__main__':
     # get data into dataframe
     df = spark.read.format("csv").load(data_path, header=True)
 
-    timeslots = stq.compute_count_per_timeslot(df)
+    distance_per_weekday = sfq.compute_distance_per_weekday(df)
 
-    timeslots.show(n=10)
+    distance_per_weekday.show()

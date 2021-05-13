@@ -18,4 +18,4 @@ if __name__ == '__main__':
 
     timeslots = stq.compute_count_per_timeslot(df)
 
-    timeslots.show(n=10)
+    timeslots.show()
