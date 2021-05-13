@@ -12,7 +12,19 @@ le même résultat avec PySpark.
 # Solution Pandas
 
 Les réponses aux questions 1,2,3 et 4 sont disponibles.
+Pour obtenir un aperçu de la réponse, il suffit de lancer le script correspondant
+depuis la racine du projet: par exemple pour la question 1 cela donne:
+
+```
+$ python3 tst/pandas/pandas_first_question_answer.py
+```
 
 # Solution PySpark
 
-Work in progress !
+Les réponses aux questions 1,2,3 et 4 sont disponibles.
+Pour obtenir un aperçu de la réponse, il suffit de lancer le script correspondant
+depuis la racine du projet: par exemple pour la question 1 cela donne:
+
+```
+$ python3 tst/spark/spark_fourth_question_answer.py
+```
